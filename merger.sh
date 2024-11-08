@@ -14,6 +14,6 @@ for file in "$mp3_folder"/*.mp3; do
     echo "file '$file'" >> "$filelist"
 done
 
-ffmpeg -f concat -safe 0 -i "$filelist" -c copy "$1"/"$1".mp3
+ffmpeg -f concat -safe 0 -i "$filelist" -c copy "$1"/output.mp3
 
 rm "$filelist"

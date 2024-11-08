@@ -1,4 +1,7 @@
-def split_text_into_blocks(text, max_length=4000):
+def split_text_into_blocks(text: str, max_length=4000) -> list[str]:
+    if not text or not text.strip():
+        raise ValueError
+
     blocks = []
     current_block = ""
 
