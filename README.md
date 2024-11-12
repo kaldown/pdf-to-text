@@ -4,6 +4,6 @@
 3) Create `artifacts/{NUMBER}` directory
 4) Set `main#EXERCISE_NUMBER` equal to `{NUMBER}`
 5) Run `main.py`
-6) Run `./merger.sh artifacts/{NUMBER}`
+6) Run `./merger.sh artifacts/{NUMBER} {output}`
 
-### Now you have `artifacts/{NUMBER}/output.mp3` file
+### Now you have `artifacts/{NUMBER}/{output}.mp3` file

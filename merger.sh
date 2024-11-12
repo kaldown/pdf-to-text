@@ -6,6 +6,7 @@ if [ -z "$1" ]; then
 fi
 
 mp3_folder="$1"
+output_filename="${2:-output}"
 
 filelist="filelist.txt"
 > "$filelist"
@@ -14,6 +15,6 @@ for file in "$mp3_folder"/*.mp3; do
     echo "file '$file'" >> "$filelist"
 done
 
-ffmpeg -f concat -safe 0 -i "$filelist" -c copy "$1"/output.mp3
+ffmpeg -f concat -safe 0 -i "$filelist" -c copy "$1"/"$output_filename".mp3
 
 rm "$filelist"
