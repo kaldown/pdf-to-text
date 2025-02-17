@@ -1,3 +1,1 @@
-BIGTEXT = """
-
-"""
+BIGTEXT: str
